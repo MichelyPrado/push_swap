@@ -5,33 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: msilva-p <msilva-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/18 10:12:06 by msilva-p          #+#    #+#             */
-/*   Updated: 2022/12/18 10:12:07 by msilva-p         ###   ########.fr       */
+/*   Created: 2022/12/19 16:26:43 by msilva-p          #+#    #+#             */
+/*   Updated: 2022/12/19 16:26:47 by msilva-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-int	ft_ret_bigger(t_stack *a)
-{
-	int	number;
-	int	bigger;
-	int	bigger_index;
-
-	number = a->numbers[0];
-	bigger = 0;
-	bigger_index = bigger;
-	while (bigger <= a->last)
-	{
-		if (a->numbers[bigger] > number)
-		{
-			number = a->numbers[bigger];
-			bigger_index = bigger;
-		}
-		bigger++;
-	}
-	return (bigger_index);
-}
 
 int	ft_ret_pos_smaller(t_stack *a)
 {
